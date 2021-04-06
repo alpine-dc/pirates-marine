@@ -1,9 +1,9 @@
-const express = requiri('express');
+const express = require('express');
 const app = express();
 const port = 3000;
 
 
-const routes = requiri('./routes')
+const routes = require('./routes')
 app.use(express.urlencoded({extended: true}))
 app.use(express.json())
 app.use(routes)
