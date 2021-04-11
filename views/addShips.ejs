@@ -25,36 +25,27 @@
     </div>
     <div class="row my-3">
         <div class="col-6 mx-auto">
-            <h3>Add Pirate</h3>
-            <form action="/pirates/add" method="post">
+            <h3>Add Ships</h3>
+            <form action="/ships/add" method="post">
                 <div class="mb-3">
                     <label class="form-label">Name :</label>
                     <input type="text" class="form-control" name="name" placeholder="Ex : James, Brandon,.." required>
                 </div>
                 <div class="mb-3">
-                    <label class="form-label">Status :</label>
-                    <select class="form-select" name="status" aria-label="Default select example">
-                        <!-- <option selected>Choose status..</option> -->
-                        <option value="Captain">Captain</option>
-                        <option value="Nakama">Nakama</option>
+                    <label class="form-label">Power :</label>
+                    <select class="form-select" name="power" aria-label="Default select example">
+                    <!-- <option selected>Choose type..</option> -->
+                        <option value="50">50</option>
+                        <option value="100">100</option>
                     </select>
-                    <!-- <input type="text" class="form-control" name="age" placeholder="Input your age must be a number" required> -->
+                <!-- <input type="text" class="form-control" name="age" placeholder="Input your age must be a number" required> -->
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Type :</label>
                     <select class="form-select" name="type" aria-label="Default select example">
                     <!-- <option selected>Choose type..</option> -->
-                        <option value="Awakening">Awakening</option>
-                        <option value="Standard">Standard</option>
-                    </select>
-                <!-- <input type="text" class="form-control" name="age" placeholder="Input your age must be a number" required> -->
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Select Ship :</label>
-                    <select class="form-select" name="shipId" aria-label="Default select example">
-                        <% data.forEach(ship => { %>
-                            <option value=<%= ship.id %>><%= ship.name %></option>
-                        <% }) %>
+                        <option value="Caravel">Caravel</option>
+                        <option value="Galleon">Galleon</option>
                     </select>
                 <!-- <input type="text" class="form-control" name="age" placeholder="Input your age must be a number" required> -->
                 </div>
