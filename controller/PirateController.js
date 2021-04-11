@@ -1,5 +1,4 @@
 const {Pirates, Ships} = require('../models')
-const Model = require('../models')
 
 class PirateController {
     static getPirates(req, res) {
