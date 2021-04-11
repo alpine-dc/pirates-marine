@@ -1,11 +1,16 @@
-const { Router} = require('express'); // import Router & framwork express
+const { Router} = require('express');
 const router = Router();
 
-
+// const ShipRoutes = require('./ship')
+const PirateRoutes = require('./pirate')
 const ShipsRoutes = require('./ships')
+
 router.get('/', (req, res) => {
-    res.render("index.ejs")      //view file index
+    res.render("index.ejs")
 })
+
+// router.use('/ship', ShipRoutes)
+router.use('/pirates', PirateRoutes)
 router.use('/ships', ShipsRoutes)
-// router.use('/pirates', PirateRoutes)
+
 module.exports = router
