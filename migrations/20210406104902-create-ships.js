@@ -15,11 +15,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       power: {
-<<<<<<< HEAD
-        type: Sequelize.STRING
-=======
         type: Sequelize.INTEGER
->>>>>>> d54a536c480199e0edd58d10179e0b18a321d16a
       },
       createdAt: {
         allowNull: false,
