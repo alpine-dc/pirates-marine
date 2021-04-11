@@ -1,10 +1,10 @@
 const ShipsRoutes = require('express').Router()
 
-const ShipsController = require('../controller/ShipContrller')
+const ShipsController = require('../controller/ShipController')
 
-PirateRoute.get('/', ShipsController.getShips)
-PirateRoute.post('/add', ShipsController.insertShip)
-PirateRoute.get('/add', ShipsController.insertPageShip)
-PirateRoute.get('/delete/:id', ShipsController.deleteShip)
+ShipsRoutes.get('/', ShipsController.getShip)
+ShipsRoutes.post('/add', ShipsController.insertShip)
+ShipsRoutes.get('/add', ShipsController.insertPageShip)
+ShipsRoutes.get('/delete/:id', ShipsController.deleteShip)
 
 module.exports = ShipsRoutes

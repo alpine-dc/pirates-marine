@@ -10,7 +10,8 @@ class ShipController {
             ],
             order: [
                 ['id', 'ASC']
-            ]
+            ], 
+            raw: true
         })
             .then(data => {
                 res.render('ships.ejs', {data})
